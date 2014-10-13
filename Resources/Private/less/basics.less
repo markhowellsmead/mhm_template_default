@@ -1,6 +1,8 @@
-// Standard definitions which always apply. Use as additional 
-// rules after css-reset.css has been implemented.
-// mhm 7.10.2014
+/*
+	Standard definitions which always apply. Use as additional 
+	rules after css-reset.css has been implemented.
+	mhm 7.10.2014
+*/
 
 //////////////////////////////////////////////////
 // helper class names
@@ -17,8 +19,7 @@
 // html, body and main container
 
 	// do NOT use clearfix on html and body. it breaks the page completely in safari.
-	
-	// vh rules don't work in IE8
+	// vh rules do not work in IE8
 
 	html,body	{min-height:100vh}
 	body		{
@@ -32,12 +33,6 @@
 
 img	{
 	border: 0;
-}
-
-blockquote {
-	border-left: 5px solid @colour-lines;
-	margin-left: 0;
-	padding-left: 1em;
 }
 
 form.module {

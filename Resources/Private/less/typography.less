@@ -1,5 +1,6 @@
-//////////////////////////////////////////////////
-// basic typography
+/*
+	CSS variables for typography
+*/
 
 // remove up/down arrows on input[type="number"]
 input::-webkit-outer-spin-button,
@@ -7,6 +8,9 @@ input::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
 }
+
+//////////////////////////////////////////////////
+// basic typography
 
 body {
 	font-family: @font-standard;
@@ -38,6 +42,12 @@ ul, ol	{
 
 li, p	{
 	margin: 0 0 1em;
+}
+
+blockquote {
+	border-left: 5px solid @colour-lines;
+	margin-left: 0;
+	padding-left: 1em;
 }
 
 //////////////////////////////////////////////////
