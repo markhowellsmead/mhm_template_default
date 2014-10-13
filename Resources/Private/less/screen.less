@@ -1,0 +1,27 @@
+/*
+	CSS rules for screen media (only)
+	For example background colours, background images
+*/
+
+@media screen {
+	
+	.print {
+		display: none;
+	}
+	
+	.logo {
+		text-align: left;
+		margin: 0;
+		a {
+			.bgi;
+			display: inline-block;
+			width: 180px; height: 180px;
+			.background-image-svg('@{path-img}/logo.svg','@{path-img}/logo.png');
+
+			// if multiple background sizes are supported, then so is background-size: contain
+			background-size: 180px 180px;
+			background-size: 180px 180px, contain;
+		}
+	}
+
+}

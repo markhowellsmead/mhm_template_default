@@ -1,0 +1,24 @@
+/*
+	This is the main stylesheet file, from which everything is linked and compiled.
+*/
+
+// Basic reset rules which apply to every website. No customization required.
+@import '/Library/WebServer/webroot/css-reset/less/css-reset';
+
+// Basic mixins which can be applied to every website. Code is only read in when mixins are called.
+@import '/Library/WebServer/webroot/frappant_helpers/less/basics';
+
+// project-specific
+@import 'variables';
+@import 'mixins';
+//@import 'fonts'; // example only. add your fonts if you need them
+@import 'typography';
+@import 'layout';
+
+// mobile and responsive rules
+@import '480';
+@import '640';
+@import '768';
+@import '960';
+@import '1024';
+@import 'mobile';

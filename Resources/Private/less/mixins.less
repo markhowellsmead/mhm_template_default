@@ -1,0 +1,13 @@
+/*
+	CSS mixins for this project
+	Use () on the mixins to ensure that the code is only compiled as part of the generated
+	CSS file if the mixin is called
+*/
+
+.fadetext(@colour:#000000;@factor:.8){
+	// fade a colour by a certain amount
+	// this uses RGBA which isn't supported in IE8
+	// IE8 uses the first rule, newer browsers use the second rule
+	color: @colour;
+	color: lighten(@colour, @factor);
+}

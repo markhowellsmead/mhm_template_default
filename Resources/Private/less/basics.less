@@ -1,0 +1,47 @@
+// Standard definitions which always apply. Use as additional 
+// rules after css-reset.css has been implemented.
+// mhm 7.10.2014
+
+//////////////////////////////////////////////////
+// helper class names
+
+	.hidden-phone 		{.hidden-phone()}
+	.hidden-tablet	 	{.hidden-tablet()}
+	.hidden-desktop 	{.hidden-desktop()}
+
+	.visible-phone 		{.visible-phone()}
+	.visible-tablet 	{.visible-tablet()}
+	.visible-desktop 	{.visible-desktop()}
+
+//////////////////////////////////////////////////
+// html, body and main container
+
+	// do NOT use clearfix on html and body. it breaks the page completely in safari.
+	
+	// vh rules don't work in IE8
+
+	html,body	{min-height:100vh}
+	body		{
+		text-align:center;
+	}
+
+	.container	{margin:0 auto;text-align:left;min-height:100vh;position:relative;}
+
+//////////////////////////////////////////////////
+// general
+
+img	{
+	border: 0;
+}
+
+blockquote {
+	border-left: 5px solid @colour-lines;
+	margin-left: 0;
+	padding-left: 1em;
+}
+
+form.module {
+	label {
+		.media-object(~'span',~'>input,>textarea');
+	}
+}

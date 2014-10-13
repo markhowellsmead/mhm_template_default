@@ -1,6 +1,13 @@
+/*
+	CSS variables for mobile devices
+	e.g. device-specific ratios
+*/
+
+
 // iOS
 @media screen and (-webkit-min-device-pixel-ratio:0) and (max-device-width: 1024px) {
 	input.gsc-input:focus {
+		// Clicking in a form field on iOS makes the browser zoom in. Block that.
 		font-size: 16px !important;
 	}
 }
