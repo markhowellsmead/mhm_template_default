@@ -7,6 +7,10 @@ Starter package for LESS-based HTML5 template, primarily for implementation as a
 ##Usage
 This version is not yet ready for use. (Nor is this instruction file!)
 
+##Hat-tips
+* [Andrew Clarke](https://github.com/malarkey/320andup)
+* [Daring Fireball](http://daringfireball.net/projects/markdown/syntax)
+
 ##License
 Use this code freely, widely and for free. Provision of this code provides and implies no guarantee.
 
