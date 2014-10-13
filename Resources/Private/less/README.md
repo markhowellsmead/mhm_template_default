@@ -4,6 +4,8 @@ Mark Howells-Mead | www.permanenttourist.ch/github | Since September 2014
 ##CSS
 This folder contains LESS (or SASS) files from which CSS will be generated. CSS files should be compiled (compressed) and saved to the Resources/Public/Css folder.
 
+Starting point is ``style.less``.
+
 ##Reference
 *[iOS Resolution Quick Reference](http://www.iosres.com/)
 
