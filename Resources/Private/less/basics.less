@@ -35,8 +35,54 @@ img	{
 	border: 0;
 }
 
-form.module {
+form {
+
+	margin-bottom: 1em;
+
 	label {
-		.media-object(~'span',~'>input,>textarea');
+		display: block;
+		margin: 0 0 1em;
+		span {
+			display: block;
+			width: 100%;
+		}
+		>input {
+			&[type="text"], &[type="search"], &[type="email"], &[type="url"], &[type="tel"], &[type="number"], &[type="range"], &[type="date"], &[type="month"], &[type="week"], &[type="time"], &[type="datetime"], &[type="datetime-local"], &[type="color"] {
+				border: 1px solid @colour-lines;
+				box-sizing: border-box;
+				padding: .25em .5%;
+				width: 100%;
+			}
+			&[type="checkbox"], &[type="radio"] {
+				margin: 0;
+			}
+		}
+		>textarea {
+			border: 1px solid @colour-lines;
+			box-sizing: border-box;
+		}
+		
+		@media (min-width: 640px){
+
+			.media-object(~'span',~'>input,>textarea');
+
+			span {
+				width: 30%;
+			}
+			>input {
+				&[type="text"], &[type="search"], &[type="email"], &[type="url"], &[type="tel"], &[type="number"], &[type="range"], &[type="date"], &[type="month"], &[type="week"], &[type="time"], &[type="datetime"], &[type="datetime-local"], &[type="color"] {
+					width: 70%;
+				}
+			}
+			>textarea {
+				width: 70%;
+			}
+		}
 	}
 }
+
+.aspect169 {
+	.aspect169();
+}
+
+

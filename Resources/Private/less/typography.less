@@ -9,23 +9,28 @@ input::-webkit-inner-spin-button {
     margin: 0;
 }
 
+
+
 //////////////////////////////////////////////////
 // basic typography
 
 body {
 	font-family: @font-standard;
-	font-size: 1em;
+	font-size: .875em;
 	color: @colour-text;
 }
 
 a {
 	color: @colour-links;
+	&:hover {
+		color: darken(@colour-links, 10%);
+	}
 }
 
 header, h1, h2, h3, h4, h5, h6 {
 	line-height: 1.2;
-	font-size: 1em;
 	color: @colour-header;
+	font-weight: bold;
 }
 
 h1, h2, h3 {
@@ -36,19 +41,23 @@ h4, h5, h6 {
 	margin: 1em 0 0;
 }
 
-ul, ol	{
-	margin: 0 0 1em;
-}
-
 li, p	{
 	margin: 0 0 1em;
 }
 
 blockquote {
-	border-left: 5px solid @colour-lines;
+	border-left: 2px solid @colour-lines;
 	margin-left: 0;
 	padding-left: 1em;
+	font-style: italic;
 }
+
+pre {
+	margin-bottom: 1em;
+	color: @colour-code;
+}
+
+
 
 //////////////////////////////////////////////////
 // navigation
@@ -61,7 +70,7 @@ nav {
 
 }
 
-@media screen and (min-width:1024px){
+@media screen and (min-width:768px){
 	body {
 		font-size: 1em;
 	}
