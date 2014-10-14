@@ -20,6 +20,18 @@ body {
 	color: @colour-text;
 }
 
+.container {
+	text-align: justify;
+}
+
+.header {
+	text-align: center;
+}
+
+.navigation {
+	text-align: center;
+}
+
 a {
 	color: @colour-links;
 	&:hover {
@@ -76,8 +88,14 @@ nav {
 	}
 }
 
+@media screen and (min-width:1025px){
+	body {
+		font-size: 1.25em;
+	}
+}
+
 @media screen and (min-width:1920px){
 	body {
-		font-size: 1.125em;
+		font-size: 1.5em;
 	}
 }
