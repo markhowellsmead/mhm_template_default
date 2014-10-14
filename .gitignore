@@ -1,3 +1,5 @@
 .DS_Store
 /Resources/Private/Css/
 /Resources/Private/less/config.codekit
+
+/Resources/Public/Css/
